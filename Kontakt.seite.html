@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt.LifeDonation</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f4f7f5;
+            font-family: "Open Sans", sans-serif;
+            padding: 0 64px;
+            margin: 0;
+        }
+
+        h1 {
+            margin-top: 140px;
+            color: #2e7d32;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .wave {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        a {
+            color: #2e7d32;
+            text-decoration: none;
+        }
+
+        .social-icons {
+            position: absolute;
+            right: 64px;
+            top: 16px;
+        }
+
+        .social-icon {
+            height: 30px;
+        }
+
+        /* FORM + BILD */
+        .kontaktbereich {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-top: 40px;
+        }
+
+        form {
+            width: 400px;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        input, select {
+            width: 100%;
+            margin-bottom: 12px;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+
+        button:hover {
+            background-color: #256628;
+            cursor: pointer;
+        }
+
+        .kontaktbereich img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<img class="wave" src="img/welle.svg" alt="welle">
+
+<div>
+    <a href="index.html">Home</a>
+    <a href="Kon.html">Kontakt</a>
+    <a href="Organ virifizieren.html">Organ-Virifizieren</a>
+    <a href="Termin vereinbaren.html">Termin vereinbaren</a>
+    <a href="Spende.html">Spende</a>
+    <a href="Imrpessum.html">Impressum</a>
+</div>
+
+<div class="social-icons">
+    <a href="https://wa.me/41767075659">
+        <img class="social-icon" src="img/w.svg" alt="WhatsApp">
+    </a>
+    <a href="mailto:anjali.bitter@icloud.com">
+        <img class="social-icon" src="img/e-mail.svg" alt="E-Mail">
+    </a>
+</div>
+
+<h1>Kontakt</h1>
+
+<p>
+ Lieber Patient, für Rückfragen oder weiterführende Informationen zur Organspende stehen wir Ihnen jederzeit gerne zur Verfügung. Bitte zögern Sie nicht, uns zu kontaktieren – sei es über WhatsApp oder direkt per E-Mail an
+    <a href="mailto:anjali.bitter@icloud.com?subject=Frage zur Organspende&body=Hallo Life Donation Team, ich habe eine Frage zur Organspende.">
+        anjali.bitter@icloud.com
+</p>
+
+<div style="background:#2a532d; padding:20px; border-radius:10px;">
+    <strong>Warum Organspende?</strong><br>
+     Eine Organspende kann Leben retten und schwer erkrankten Menschen eine zweite Chance für ein Leben schenken. 
+     Deshalb sind genau Sie gefragt: Werden Sie zum Lebensretter und entscheiden Sie sich für eine Organspende. 
+     Ein kleiner Klick auf den Spendenbutton kann grosses bewirken und Menschen in Not Hoffnung schenken.
+        
+</div>
+
+<h2>Kontaktformular</h2>
+
+<div class="kontaktbereich">
+
+    <form action="kontaktdanke.html" method="get">
+
+        <label>Name:</label>
+        <input type="text" name="vorname" required>
+
+        <label>Nachname:</label>
+        <input type="text" name="nachname" required>
+
+        <label>Kanton:</label>
+        <input type="text" name="kanton" required>
+
+        <label>Land:</label>
+        <input type="text" value="Schweiz" readonly>
+
+        <label>Telefon:</label>
+        <input type="tel" placeholder="+41 12 456 78 90" required>
+
+        <label>E-Mail:</label>
+        <input type="email" required>
+
+        <label>Thema:</label>
+        <select required>
+            <option disabled selected>Bitte wählen</option>
+            <option>Organspende</option>
+            <option>Geldspende</option>
+        </select>
+
+        <button type="submit">Absenden</button>
+
+    </form>
+
+    <img src="img/hands.png" alt="Hände">
+
+</div>
+
+</body>
+</html>
